@@ -1,11 +1,37 @@
+*:focus{
+    outline: #FF7500 dotted 4px;
+    outline-offset: 3px;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .sayt-header{
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sayt-header-actions{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo-link{
+    transition: opacity 0.4s ease;
+}
+.logo-link:hover{
+    opacity: 0.8;
 }
 .sayt-nav{
     background-color: #fff;
 }
 .saytnav--links{
     list-style: none;
+    display: flex;
+    
 }
 .saytnav--link{
     font-style: normal;
@@ -17,6 +43,10 @@
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    transition: color 0.4s ease, opacity 0.6s ease;
+}
+.saytnav--link:hover{
+     color: #FF7500;
 }
 .main-links{
     font-family: Roboto;
@@ -28,10 +58,20 @@
     background: #FF7500;
     color: #FFFFFF;
     text-decoration: none;
+    transition: opacity 0.4s ease;
+}
+.main-links:hover{
+    opacity: 0.8;
+}
+.main-links:active{
+    opacity: 0.6;
 }
 .hero{
     background: #252420;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .hero-line{
     width: 80px;
@@ -96,6 +136,12 @@
     letter-spacing: 0.5px;
     color: #000000;
 }
+.features-items{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
 .features-item{
     width: 340px;
     height: 245px;
@@ -104,6 +150,9 @@
     width: 1100px;
     /* height: 419px;  */
     background: #252420;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     
 }
@@ -142,6 +191,21 @@
     height: 507px;
     background: #F8F8F8;
 }
+.site-footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials a{
+    color: #252420;
+}
+.socials a:hover{
+    color:#FF7500;
+}
+.socials a:active{
+color: #FF7500;
+opacity: 0.6;
+}
 .site-footer-divider{
     background: rgba(37, 36, 32, 0.5);
     height: 2px;
@@ -155,4 +219,19 @@
 .site-footer-links a{
 text-decoration: none;
 color: #252420;
+}
+.site-footer-links a:hover{
+    color: #FF7500;
+}
+.site-footer-links a:active{
+    opacity: 0.6;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-footer-bottom{
+    display: flex;
+    justify-content: space-between;
 }
