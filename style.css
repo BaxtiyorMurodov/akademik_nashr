@@ -11,10 +11,10 @@
     padding-left: 20px;
 }
 
-/* *:focus{
+*:focus{
     outline: #FF7500 dotted 4px;
     outline-offset: 3px;
-} */
+}
 body{
     
     margin: 0;
@@ -347,6 +347,11 @@ body{
 .site-footer-links a{
     text-decoration: none;
     color: #252420;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 }
 .site-footer-links a:hover{
     color: #FF7500;
